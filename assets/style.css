@@ -1,0 +1,43 @@
+html {
+    background-color: black;
+}
+body {
+    max-width: 480px;
+    min-width:230px;
+    margin-top:3em;
+    margin-bottom:3em;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:1em;
+}
+body, button, textarea{
+    color:white;
+    border:2px solid white;
+    padding:1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+h1, h2 {
+    line-height: 1em;
+}
+textarea {
+    background-color: black;
+    display:block;
+    margin:1em auto;
+    height:5em;
+    width:20em;
+}
+::placeholder { 
+    color:white;
+    opacity: 1; 
+    padding:.2em;
+}
+button {
+    background-color: black;
+    margin:1em;
+    padding:1em;
+    box-shadow: none;
+    width:10em;
+}
