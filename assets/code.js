@@ -22,7 +22,7 @@ let finalPassword="";
 
 //prompt for password length, between 8 and 128 characters
 function promptLength() {
-    passwordLength=prompt("How many characters? (between 8 and 28");
+    passwordLength=prompt("How many characters? (between 8 and 128");
     console.log("length: "+passwordLength);
     //validate length is between 8 and 128 characters, else run function again
     if(passwordLength>=8 && passwordLength<=128){
