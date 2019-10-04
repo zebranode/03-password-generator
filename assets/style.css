@@ -45,3 +45,18 @@ button:hover, button:focus {
     border: solid 2px rgb(255, 252, 93);
     color:  rgb(255, 252, 93);
 }
+/* responsive mobile styles */
+@media only screen and (max-width: 464px) {
+    body {
+        margin-left:1em;
+        margin-right:1em;
+    }
+    button {
+        width:20em;
+        margin: 1em auto;
+        display:block;
+    }
+    textarea {
+        padding:0em;
+    }
+}
