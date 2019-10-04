@@ -125,6 +125,8 @@ generate.addEventListener("click", function() {
     mainProgram();
     //update page with password
     container.placeholder=finalPassword;
+    //overrides CSS text-transforms to display password correctly and highlights textarea
+    container.setAttribute("style", "text-transform: none; border-color: rgb(255, 252, 93);");
     //set focus to copy button
     copyClip.focus();
 });
