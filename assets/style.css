@@ -41,3 +41,7 @@ button {
     box-shadow: none;
     width:10em;
 }
+button:hover, button:focus {
+    border: solid 2px rgb(255, 252, 93);
+    color:  rgb(255, 252, 93);
+}
