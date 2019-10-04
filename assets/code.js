@@ -129,6 +129,8 @@ generate.addEventListener("click", function() {
     container.setAttribute("style", "text-transform: none; border-color: rgb(255, 252, 93);");
     //set focus to copy button
     copyClip.focus();
+    //sets page background image
+    wholePage.setAttribute("style", "background-image:url(\"assets/starfield.gif\");");
 });
 
 //on button click, copy password to clipboard
