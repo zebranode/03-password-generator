@@ -112,7 +112,39 @@ function mainProgram() {
     insertMandatoryChars();
     console.log("password generated: "+finalPassword);
 }
-mainProgram();
+
+//page elements to manipulate
+var generate = document.querySelector("#generate");
+var container = document.querySelector("#password");
+var wholePage = document.body.parentElement;
+var copyClip = document.querySelector("#copy");
+
+//on button click, generate password & update page to display
+generate.addEventListener("click", function() {
+    //*** runs the main program ***
+    mainProgram();
+    //update page with password
+    container.placeholder=finalPassword;
+    //set focus to copy button
+    copyClip.focus();
+});
+
+//on button click, copy password to clipboard
+copyClip.addEventListener("click", function() {
+    //check if password exists to copy, copy text if so
+    if (finalPassword) {
+        navigator.clipboard.writeText(finalPassword).then(function() {
+            console.log('copied to clipboard');
+          }, function(err) {
+            console.log('copy error');
+          });
+    } else {
+    alert("generate password first");
+    }
+    //removes focus from copy button
+    document.getElementById("password").focus();
+});
+
 
 
 
