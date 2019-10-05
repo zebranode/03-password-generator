@@ -75,7 +75,7 @@ function genNewChar(charSet){
     return newChar;
 }
 
-// generate fully random password with length specified by user. loops previous genNewChar function. 
+// generate fully random password using the provided character set, with the user-specified length. loops previous genNewChar function. 
 function genPassword(charSet){
     randomPassword="";
     for (let i=0;i<passwordLength;i++){
@@ -84,7 +84,7 @@ function genPassword(charSet){
 }
 
 // checks for mandatory character selections and inserts them as required, each removing a character from the password to preserve the original length. 
-// ensures user selected character types definitly occur in the password even if not randomly generated
+// ensures user selected character types definitely occur in the password even if not randomly generated
 function insertMandatoryChars(){
         finalPassword=randomPassword;
         if (includeSpecial===true){
@@ -118,6 +118,8 @@ var generate = document.querySelector("#generate");
 var container = document.querySelector("#password");
 var wholePage = document.body.parentElement;
 var copyClip = document.querySelector("#copy");
+
+//event listeners
 
 //on button click, generate password & update page to display
 generate.addEventListener("click", function() {
