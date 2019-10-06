@@ -114,10 +114,10 @@ function mainProgram() {
 }
 
 //page elements to manipulate
-var generate = document.querySelector("#generate");
-var container = document.querySelector("#password");
-var wholePage = document.body.parentElement;
-var copyClip = document.querySelector("#copy");
+let generate = document.querySelector("#generate");
+let container = document.querySelector("#password");
+let wholePage = document.body.parentElement;
+let copyClip = document.querySelector("#copy");
 
 //event listeners
 
