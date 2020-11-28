@@ -7,6 +7,6 @@ A responsive password generator using javascript.
 ![CSS](https://img.shields.io/badge/CSS-blue)
 ![Javascript](https://img.shields.io/badge/Javascript-yellow)
 
-Live Site: https://onecheesepizza.github.io/03-password-generator/
+Live Site: https://zebranode.github.io/03-password-generator/
 
 ![Screenshot](assets/03-pwgen-screenshot.png)
